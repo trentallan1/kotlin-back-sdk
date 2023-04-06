@@ -137,8 +137,8 @@ publishing {
                     }
                 }
                 scm {
-                    connection.set("scm:https://github.com/turbomates/kotlin-back-sdk.git")
-                    developerConnection.set("scm:git@github.com:turbomates/kotlin-back-sdk.git")
+                    connection.set("scm:https://github.com/wallacejme/kotlin-back-sdk.git")
+                    developerConnection.set("scm:git@github.com:wallacejme/kotlin-back-sdk.git")
                 }
             }
         }
@@ -146,7 +146,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/turbomates/kotlin-back-sdk")
+            url = uri("https://maven.pkg.github.com/wallacejme/kotlin-back-sdk")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
