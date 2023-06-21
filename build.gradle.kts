@@ -14,7 +14,7 @@ plugins {
 }
 
 group = "com.github.turbomates"
-version = "0.5.9"
+version = "0.5.13"
 
 
 repositories {
@@ -109,21 +109,21 @@ java {
     withSourcesJar()
 }
 
-// publishing {
-//     publications {
-//         create<MavenPublication>("mavenJava") {
-//             artifactId = "common-lib"
-//             groupId = "dev.tmsoft.kotlin"
-//             from(components["java"])
-//             pom {
-//                 name.set("Kotlin backend common library")
-//                 description.set("This library contains different resolutions with ktor, exposed, serialization")
-//                 licenses {
-//                     license {
-//                         name.set("The Apache License, Version 2.0")
-//                         url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
-//                     }
-//                 }
+ publishing {
+     publications {
+         create<MavenPublication>("mavenJava") {
+             artifactId = "common-lib"
+             groupId = "dev.tmsoft.kotlin"
+             from(components["java"])
+             pom {
+                 name.set("Kotlin backend common library")
+                 description.set("This library contains different resolutions with ktor, exposed, serialization")
+                 licenses {
+                     license {
+                         name.set("The Apache License, Version 2.0")
+                         url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                     }
+                 }
 //                 developers {
 //                     developer {
 //                         id.set("shustrik")
@@ -135,25 +135,25 @@ java {
 //                     connection.set("scm:https://github.com/turbomates/kotlin-back-sdk.git")
 //                     developerConnection.set("scm:git@github.com:turbomates/kotlin-back-sdk.git")
 //                 }
-//             }
-//         }
-//     }
-//     repositories {
-//         maven {
-//             name = "GitHubPackages"
-//             url = uri("https://maven.pkg.github.com/turbomates/kotlin-back-sdk")
-//             credentials {
-//                 username = System.getenv("GITHUB_ACTOR")
-//                 password = System.getenv("GITHUB_TOKEN")
-//             }
-//         }
-//     }
-// }
+             }
+         }
+     }
+     repositories {
+         maven {
+             name = "GitHubPackages"
+             url = uri("https://maven.pkg.github.com/trentallan1/kotlin-back-sdk")
+             credentials {
+                 username = "harmeetsohi27@gmail.com"
+                 password = "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"
+             }
+         }
+     }
+ }
 
-publishing {
-    publications {
-        create<MavenPublication>("mavenJava") {
-            from(components["java"])
-        }
-    }
-}
+//publishing {
+//    publications {
+//        create<MavenPublication>("mavenJava") {
+//            from(components["java"])
+//        }
+//    }
+//}
