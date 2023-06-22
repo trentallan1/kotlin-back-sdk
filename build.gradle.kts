@@ -14,7 +14,7 @@ plugins {
 }
 
 group = "com.github.turbomates"
-version = "0.5.13"
+version = "0.5.15"
 
 
 repositories {
@@ -143,8 +143,8 @@ java {
              name = "GitHubPackages"
              url = uri("https://maven.pkg.github.com/trentallan1/kotlin-back-sdk")
              credentials {
-                 username = "harmeetsohi27@gmail.com"
-                 password = "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"
+                 username = System.getenv("GITHUB_ACTOR")
+                 password = System.getenv("GITHUB_TOKEN")
              }
          }
      }
