@@ -63,4 +63,4 @@ jobs:
           keep: 10
           version-pattern: "^\\d+\\.[2|3|4].\\d+$"
           names: |
-            dev.tmsoft.kotlin.common-lib
+           dev.tmsoft.kotlin.common-lib
