@@ -46,7 +46,7 @@ class ContinuousListTest {
             val users = runBlocking {
                 UserTable.selectAll()
                     .toContinuousList(
-                        PagingParameters(30, 1),
+                        PagingParameters(30, 1, ""),
                         ResultRow::toUser,
                         listOf(
                             SortingParameter("number", SortOrder.DESC),
@@ -65,7 +65,7 @@ class ContinuousListTest {
                 runBlocking {
                     UserTable.selectAll()
                         .toContinuousList(
-                            PagingParameters(30, 1),
+                            PagingParameters(30, 1, ""),
                             ResultRow::toUser,
                             listOf(
                                 SortingParameter(
@@ -118,7 +118,7 @@ class ContinuousListTest {
             val users = runBlocking {
                 UserTable.selectAll()
                     .toContinuousList(
-                        PagingParameters(30, 1),
+                        PagingParameters(30, 1, ""),
                         ResultRow::toUser,
                         null,
                         true

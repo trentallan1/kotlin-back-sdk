@@ -1,3 +1,4 @@
+@file:Suppress("UnstableApiUsage")
 rootProject.name = "dev.tmsoft.lib"
 
 enableFeaturePreview("VERSION_CATALOGS")

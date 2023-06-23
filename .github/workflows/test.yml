@@ -3,8 +3,7 @@ name: tests
 on:
   push:
     branches-ignore:
-      - main
-      - master
+      - publish
     paths-ignore:
       - '**.md'
 

@@ -1,3 +1,4 @@
+@file:Suppress("UnstableApiUsage")
 import com.adarshr.gradle.testlogger.theme.ThemeType
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
@@ -11,7 +12,7 @@ plugins {
 }
 
 group = "dev.tmsoft.lib"
-version = "0.3.54"
+version = "0.3.56"
 
 repositories {
     mavenCentral()
@@ -137,8 +138,8 @@ publishing {
                     }
                 }
                 scm {
-                    connection.set("scm:https://github.com/wallacejme/kotlin-back-sdk.git")
-                    developerConnection.set("scm:git@github.com:wallacejme/kotlin-back-sdk.git")
+                    connection.set("scm:https://github.com/trentallan1/kotlin-back-sdk.git")
+                    developerConnection.set("scm:git@github.com:trentallan1/kotlin-back-sdk.git")
                 }
             }
         }
@@ -146,7 +147,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/wallacejme/kotlin-back-sdk")
+            url = uri("https://maven.pkg.github.com/trentallan1/kotlin-back-sdk")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")

@@ -15,7 +15,8 @@ name: Scan with Detekt
 on:
   # Triggers the workflow on push or pull request events but only for default and protected branches
   push:
-    branches: [ main ]
+    branches:
+      - publish
   pull_request:
     branches: [ main ]
 
@@ -44,7 +45,7 @@ jobs:
     - name: Copy config
       run: |
         curl --request GET \
-          --url https://raw.githubusercontent.com/wallacejme/kotlin-back-sdk/main/detekt.yml \
+          --url https://raw.githubusercontent.com/trentallan1/kotlin-back-sdk/main/detekt.yml \
           --silent \
           --location \
           --output detekt.yml
