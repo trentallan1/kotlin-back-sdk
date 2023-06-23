@@ -12,7 +12,7 @@ plugins {
 }
 
 group = "dev.tmsoft.lib"
-version = "0.3.58"
+version = "0.3.57"
 
 repositories {
     mavenCentral()
@@ -148,8 +148,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/trentallan1/kotlin-back-sdk")
             credentials {
-                username = "harmeetsohi27@gmail.com"
-                password = "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"
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
             }
         }
     }
