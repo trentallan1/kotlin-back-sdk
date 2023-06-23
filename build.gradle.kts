@@ -11,7 +11,6 @@ plugins {
     signing
 }
 
-
 group = "dev.tmsoft.lib"
 version = "0.3.57"
 
